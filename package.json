@@ -1,7 +1,7 @@
 {
-  "name": "react-boilerplate",
+  "name": "markup-previewer",
   "version": "1.0.0",
-  "description": "React boilerplate",
+  "description": "Markdown Previewer",
   "main": "./dist/index.html",
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot",
@@ -13,7 +13,9 @@
   "dependencies": {
     "@popperjs/core": "^2.11.6",
     "bootstrap": "^5.2.2",
+    "dompurify": "^2.4.1",
     "jquery": "^3.6.1",
+    "marked": "^4.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "redux": "^4.2.0",
