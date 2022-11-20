@@ -1,5 +1,5 @@
 {
-  "name": "markup-previewer",
+  "name": "markdown-previewer",
   "version": "1.0.0",
   "description": "Markdown Previewer",
   "main": "./dist/index.html",
