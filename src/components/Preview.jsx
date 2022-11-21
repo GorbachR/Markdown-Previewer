@@ -6,7 +6,10 @@ import "./styles/Preview.scss";
 function Preview({ markdown }) {
   const htmlString = DOMPurify.sanitize(marked.parse(markdown));
   return (
-    <div className="preview" id="preview" dangerouslySetInnerHTML={{ __html: htmlString }}></div>
+    <div className="preview-container">
+      <h2>Output</h2>
+      <div className="preview" id="preview" dangerouslySetInnerHTML={{ __html: htmlString }}></div>
+    </div>
   );
 }
 

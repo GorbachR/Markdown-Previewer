@@ -1,4 +1,5 @@
 //@import "~bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&family=Ubuntu&family=Work+Sans:wght@500&display=swap");
 
 *,
 *::before,
@@ -13,8 +14,25 @@ html {
 body {
   margin: 0;
   padding: 0;
+  font-family: "Ubuntu", sans-serif;
+  input,
+  textarea {
+    font-family: "Ubuntu", sans-serif;
+  }
 }
 
 #root {
   padding: 2rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+  }
+  body {
+    background-color: #171717;
+  }
+}
+
+h2 {
 }

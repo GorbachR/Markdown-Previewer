@@ -1,5 +1,31 @@
-.editor {
+@import "./_color-palette.scss";
+
+.editor-container {
+  filter: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
+
   > textarea {
     max-width: 100%;
+    display: block;
+    background-color: $bg-color;
+    border: 1px solid $bg-color;
+    padding: 1rem;
+    resize: none;
+
+    &:focus {
+      outline: none;
+      border: 1px solid #005c97;
+    }
+  }
+
+  > label {
+    display: block;
+    background: $main-gradient;
+    color: white;
+    padding: 1rem;
+  }
+
+  h2 {
+    text-align: center;
+    margin: 0;
   }
 }

@@ -6,7 +6,10 @@ function Editor({ markdown, setMarkdown }) {
     setMarkdown(e.target.value);
   }
   return (
-    <div className="editor">
+    <div className="editor-container">
+      <label htmlFor="editor">
+        <h2>Markdown Editor</h2>
+      </label>
       <textarea
         name="markdown"
         id="editor"
