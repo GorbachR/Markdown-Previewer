@@ -1,5 +1,7 @@
 //@import "~bootstrap/scss/bootstrap";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&family=Ubuntu&family=Work+Sans:wght@500&display=swap");
+@import "./scss/partials/typography";
+@import "./scss/partials/color-palette";
 
 *,
 *::before,
@@ -15,14 +17,20 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Ubuntu", sans-serif;
+  color: $font-color;
+  line-height: 1.3rem;
   input,
   textarea {
     font-family: "Ubuntu", sans-serif;
+    color: $font-color;
+    line-height: 1.3rem;
   }
 }
 
 #root {
-  padding: 2rem;
+  @media (min-width: 576px) {
+    padding: 2rem;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -34,5 +42,8 @@ body {
   }
 }
 
-h2 {
+@each $h, $val in $heading-line-height {
+  #{$h} {
+    line-height: $val;
+  }
 }
