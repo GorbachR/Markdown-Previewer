@@ -1,8 +1,60 @@
+@import "../../scss/partials/color-palette";
+
+.preview-container {
+  filter: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
+  @media (min-width: 576px) {
+    max-width: 30rem;
+    width: 100%;
+  }
+
+  > h2 {
+    color: white;
+    background: $main-gradient;
+    padding: 1rem;
+    margin: 0;
+    text-align: center;
+    word-wrap: break-word;
+  }
+}
+
 .preview {
-  width: 30rem;
+  background-color: $bg-color;
+  padding: 1rem;
+  min-height: 15rem;
+
+  > :not(ol):not(ul):not(pre):not(li):not(.table-wrapper) {
+    word-wrap: break-word;
+  }
 
   img {
     width: 100%;
     height: auto;
+  }
+
+  > pre,
+  > ul,
+  > ol,
+  > .table-wrapper {
+    overflow-x: auto;
+  }
+
+  > pre {
+    background-color: white;
+    padding: 0.5rem;
+  }
+
+  table {
+    th,
+    td {
+      padding: 0.25rem;
+    }
+  }
+
+  > :first-child {
+    margin-top: 0;
+  }
+
+  > :last-child {
+    margin-bottom: 0;
   }
 }
