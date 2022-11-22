@@ -4,6 +4,7 @@
   filter: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
   @media (min-width: 576px) {
     max-width: 30rem;
+    width: 100%;
   }
 
   > h2 {
@@ -19,6 +20,7 @@
 .preview {
   background-color: $bg-color;
   padding: 1rem;
+  min-height: 15rem;
 
   > :not(ol):not(ul):not(pre):not(li):not(.table-wrapper) {
     word-wrap: break-word;
