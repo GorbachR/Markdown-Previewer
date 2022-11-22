@@ -33,15 +33,6 @@ body {
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    color-scheme: dark;
-  }
-  body {
-    background-color: #171717;
-  }
-}
-
 @each $h, $val in $heading-line-height {
   #{$h} {
     line-height: $val;
